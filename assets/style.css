@@ -1,0 +1,104 @@
+/*
+ * General
+ */
+html
+{ 
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+body
+{
+	margin: 0px;
+    color: white;
+	padding: 10px;
+    background-color: #144e56;
+    background-image: url('../images/wallpaper.jpg');
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+
+.the-box
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#messageBox
+{
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    height: 10%;
+    color: white;
+    z-index: 1000;
+    position: fixed;
+    font-size: 70%;
+    display: none;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: black;
+    border: solid 1px white;
+}
+
+#messageText {display: table-cell; vertical-align: middle;}
+
+#debugBox
+{
+    top: 32%;
+    left: 2%;
+    width: 96%;
+    height: 66%;
+    color: white;
+    padding: 5px;
+    display: none;
+    z-index: 1100;
+    position: fixed;
+    font-size: 70%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: black;
+    border: solid 1px white;
+}
+
+#map
+{
+    width: 100%;
+    height: 100%;
+    border: solid 1px black;
+}
+
+#toggleSending
+{
+    font-size: 330%;
+    font-weight: bold;
+}
+
+/*
+ * Font Awesome Fixup
+ */
+ .icons-ul
+ {
+     width: 300px;
+     display: inline-block;
+     margin-left: 11px !important;
+ }
+
+.icons-ul > li {margin-left: -14px}
+
+.icons-ul > li > span
+{
+    font-size: 75%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.icons-ul>li {margin-bottom: 3px}
+
+.errorPackagesBlock
+{
+    color: #ff6666;
+    display: none;
+}
