@@ -37,12 +37,12 @@ Tested **only** as compiled through [PhoneGap Build](http://build.phonegap.com).
 
 Upon finishing last touches (see [Issues](https://github.com/trejder/slp-client/issues) for details), this project will most likely be abandoned.
 
-It lacks some certain functionality and has some small or bigger bugs:
+It lacks some certain functionality and has some smaller or bigger bugs:
 
 1. There is completely no support for user credentials / logging in. Client, once started, throws all the location data directly to [server](https://github.com/trejder/slp-server) and server itself distinguishes clients by analysing UUID only.
 
-2. Filtering methods on server side are very poor, causing an enormous amount of data being pushed back to the browser and resulting in timeouts or server resources being exhauted on quite large tracks (few thousands of points / seconds).
+2. Filtering methods on server side are very poor, causing an enormous amount of data being pushed back to the browser and resulting in timeouts or server resources being exhausted on quite large tracks (few thousands of points / seconds).
 
-3. There is absolutely no data preparation done at server side. All points and entire dataset is pushed to browser and all the track drawing or stats calulating routines are made there, using Javascript. This causes entire solution to be awfully slow.
+3. There is absolutely no data preparation done at server side. All points and entire dataset is pushed to browser and all the track drawing or stats calculating routines are made there, using Javascript. This causes entire solution to be awfully slow.
 
 Unfortunately, all these nasty things are placed so deeply in core code of both client and server, that to fix it, entire project would actually have to be rewritten from scratch. That is, why you should treat this project just as a toy, a funny experiment or an introduction to writing your own solution. You shouldn't **absolutely** use it in production environment or for any kind of serious location or tracking issues.
