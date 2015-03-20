@@ -10,15 +10,13 @@ This is a mobile client for my Simple Location Project, written in PhoneGap 2.9.
     - [fork](https://github.com/slproject/client/fork) this repository,
     - clone this repository locally,
     - [download](https://github.com/slproject/client/archive/master.zip) `master` branch as `.zip` file.
-2. Change settings in `assets/app.js` to match your server's settings.
+2. Change settings in `assets/app.js` to match [your server's settings](https://github.com/slproject/server) (see below).
 3. Upload modified code to PhoneGap Build (see below notice) and compile to desired platforms or build it locally.
 4. Install compiled mobile application on selected device, start it and enjoy.
 
 You, of course, have to have [server for this project](https://github.com/slproject/server) installed and working or else everything will fail.
 
 Before recompiling this code in PhoneGap Build or before building it locally, you have to edit `assets/app.js` and change `configuration.server.ip` and `configuration.server.path` settings to match your server's settings (so the mobile client would know, where to push data).
-
-Small notice. If you login to PhoneGap Build using your GitHub account, then forking is the best option, as you should see code directly in your [Apps](https://build.phonegap.com/apps) page of PGB, ready to be compiled. But, you have to edit your fork and change [server](https://github.com/slproject/server)'s IP address.
 
 ## Tests
 
