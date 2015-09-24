@@ -1,6 +1,6 @@
 # Client for Simple Location Project
 
-**Works on this project are in progress! Do not clone it, until this message is removed or until you're ready to finish it yourself. At this point it is pretty unusable at all! It isn't even translated to English yet. See [Issues](https://github.com/slproject/client/issues) for details and progress. Even, if these issues will be finally resolved, this project is about to be abandoned. See extended explanation in the end of this document.**
+**This project is ABANDONED! It isn't translated into English, it has a lot of serious problems (see end of this document and [issues](https://github.com/slproject/client/issues)) and will be [rewritten from scratch](https://github.com/yiinsanedevs/location-beast-client).**
 
 This is a mobile client for my Simple Location Project, written in PhoneGap 2.9.0. It uses [Font Awesome](http://fontawesome.io/icons/), [Zepto.js](http://zeptojs.com/) and various number of other small Javascript libraries.
 
@@ -31,9 +31,7 @@ All seems to be fine on all platforms and all devices.
 
 Tested **only** as compiled through [PhoneGap Build](http://build.phonegap.com). Never compiled locally or tested after such build.
 
-## Project is nearly abandoned
-
-Upon finishing last touches (see [Issues](https://github.com/slproject/client/issues) for details), this project will most likely be abandoned.
+## Project is really bad!
 
 It lacks some certain functionality and has some smaller or bigger bugs:
 
@@ -43,4 +41,4 @@ It lacks some certain functionality and has some smaller or bigger bugs:
 
 3. There is absolutely no data preparation done at server side. All points and entire dataset is pushed to browser and all the track drawing or stats calculating routines are made there, using Javascript. This causes entire solution to be awfully slow.
 
-Unfortunately, all these nasty things are placed so deeply in core code of both client and server, that to fix it, entire project would actually have to be rewritten from scratch. That is, why you should treat this project just as a toy, a funny experiment or an introduction to writing your own solution. You shouldn't **absolutely** use it in production environment or for any kind of serious location or tracking issues.
+Unfortunately, all these nasty things are placed so deeply in core code of both client and server, that to fix it, entire project would actually have to be [rewritten from scratch](https://github.com/yiinsanedevs/location-beast-client). That is, why you should treat this project just as a toy, a funny experiment or an introduction to writing your own solution. You shouldn't **absolutely** use it in production environment or for any kind of serious location or tracking issues.
