@@ -1,4 +1,4 @@
-# Client for Simple Location Project
+# Client for Simple GPS Location Project
 
 **This project is ABANDONED! It isn't translated into English, it has a lot of serious problems (see end of this document and [issues](https://github.com/slproject/client/issues)) and will be [rewritten from scratch](https://github.com/yiinsanedevs/location-beast-client).**
 
