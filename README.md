@@ -1,20 +1,20 @@
 # Client for Simple GPS Location Project
 
-**This project is ABANDONED! It isn't translated into English, it has a lot of serious problems (see end of this document and [issues](https://github.com/slproject/client/issues)) and will be [rewritten from scratch](https://github.com/yiinsanedevs/location-beast-client).**
+**This project is ABANDONED! It isn't translated into English, it has a lot of serious problems (see end of this document and [issues](https://github.com/sglp/client/issues)) and will be [rewritten from scratch](https://github.com/yiinsanedevs/location-beast-client).**
 
 This is a mobile client for my Simple Location Project, written in PhoneGap 2.9.0. It uses [Font Awesome](http://fontawesome.io/icons/), [Zepto.js](http://zeptojs.com/) and various number of other small Javascript libraries.
 
 ## Usage
 
 1. Get the newest version of the source code:
-    - [fork](https://github.com/slproject/client/fork) this repository,
+    - [fork](https://github.com/sglp/client/fork) this repository,
     - clone this repository locally,
-    - [download](https://github.com/slproject/client/archive/master.zip) `master` branch as `.zip` file.
-2. Change settings in `assets/app.js` to match [your server's settings](https://github.com/slproject/server) (see below).
+    - [download](https://github.com/sglp/client/archive/master.zip) `master` branch as `.zip` file.
+2. Change settings in `assets/app.js` to match [your server's settings](https://github.com/sglp/server) (see below).
 3. Upload modified code to PhoneGap Build (see below notice) and compile to desired platforms or build it locally.
 4. Install compiled mobile application on selected device, start it and enjoy.
 
-You, of course, have to have [server for this project](https://github.com/slproject/server) installed and working or else everything will fail.
+You, of course, have to have [server for this project](https://github.com/sglp/server) installed and working or else everything will fail.
 
 Before recompiling this code in PhoneGap Build or before building it locally, you have to edit `assets/app.js` and change `configuration.server.ip` and `configuration.server.path` settings to match your server's settings (so the mobile client would know, where to push data).
 
@@ -35,7 +35,7 @@ Tested **only** as compiled through [PhoneGap Build](http://build.phonegap.com).
 
 It lacks some certain functionality and has some smaller or bigger bugs:
 
-1. There is completely no support for user credentials / logging in. Client, once started, throws all the location data directly to [server](https://github.com/slproject/server) and server itself distinguishes clients by analysing UUID only.
+1. There is completely no support for user credentials / logging in. Client, once started, throws all the location data directly to [server](https://github.com/sglp/server) and server itself distinguishes clients by analysing UUID only.
 
 2. Filtering methods on server side are very poor, causing an enormous amount of data being pushed back to the browser and resulting in timeouts or server resources being exhausted on quite large tracks (few thousands of points / seconds).
 
